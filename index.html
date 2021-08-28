@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="theme" class="light">
+      <div class="main-container">
+        <div class="background-img"></div>
+        <div class="container">
+          <div class="title">
+            <h1>TODO</h1>
+            <div class="moon-icon"></div>
+          </div>
+          <div class="input-item">
+            <button type="button" class="check-btn">
+              <div class="circle-icon">
+                <div class="circle-icon-s-wrapper">
+                  <img class="check-icon" src="images/icon-check.svg" alt="" />
+                  <div class="circle-icon-s input-btn"></div>
+                </div>
+              </div>
+            </button>
+            <input
+              class="input"
+              placeholder="Create a new todo.."
+              type="text"
+            />
+          </div>
+          <ul class="list-items">
+            <li id="second-nav">
+              <p class="items-left">0 items left</p>
+              <p class="clear-completed">Clear Completed</p>
+            </li>
+          </ul>
+          <div class="nav-wrapper">
+            <div id="nav">
+              <p class="items-left desktop">78 items left</p>
+              <div class="nav-btns">
+                <button class="active-btn nav-btn" type="button">All</button>
+                <button class="nav-btn" type="button">Active</button>
+                <button class="nav-btn" type="button">Completed</button>
+              </div>
+              <p class="clear-completed desktop">Clear Completed</p>
+            </div>
+          </div>
+          <p class="drag-and-drop">Drag and drop to reorder list</p>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Lalvar</a>.
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
